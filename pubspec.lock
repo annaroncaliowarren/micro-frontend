@@ -50,6 +50,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.5"
+  design_system:
+    dependency: transitive
+    description:
+      path: "packages/micro_commons/design_system"
+      relative: true
+    source: path
+    version: "0.0.1"
   fake_async:
     dependency: transitive
     description:
@@ -102,6 +109,27 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.7.0"
+  micro_app_home:
+    dependency: "direct main"
+    description:
+      path: "packages/micro_apps/home"
+      relative: true
+    source: path
+    version: "0.0.1"
+  micro_app_login:
+    dependency: "direct main"
+    description:
+      path: "packages/micro_apps/login"
+      relative: true
+    source: path
+    version: "0.0.1"
+  micro_app_product:
+    dependency: "direct main"
+    description:
+      path: "packages/micro_apps/product"
+      relative: true
+    source: path
+    version: "0.0.1"
   micro_core:
     dependency: "direct main"
     description:

@@ -38,6 +38,15 @@ dependencies:
   micro_core:
     path: packages/micro_core
 
+  micro_app_login:
+    path: packages/micro_apps/login
+  
+  micro_app_home:
+    path: packages/micro_apps/home
+  
+  micro_app_product:
+    path: packages/micro_apps/product
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

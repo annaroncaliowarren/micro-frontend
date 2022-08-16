@@ -1,4 +1,4 @@
-name: micro_core
+name: micro_app_product
 description: A new Flutter package project.
 version: 0.0.1
 publish_to: none
@@ -11,9 +11,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  
-  design_system:
-    path: ../micro_commons/design_system
+
+  micro_core:
+    path: ../../micro_core  
 
 dev_dependencies:
   flutter_test:

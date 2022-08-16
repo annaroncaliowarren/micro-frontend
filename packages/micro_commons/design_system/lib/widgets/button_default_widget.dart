@@ -14,7 +14,21 @@ class ButtonDefaultWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: onPressed,
-      child: Text(title),
+      style: ElevatedButton.styleFrom(
+        primary: Colors.green.shade100,
+        padding: const EdgeInsets.symmetric(
+          vertical: 15,
+          horizontal: 35,
+        ),
+      ),
+      child: Text(
+        title,
+        style: TextStyle(
+          color: Colors.green.shade900,
+          fontWeight: FontWeight.bold,
+          fontSize: 20,
+        ),
+      ),
     );
   }
 }
