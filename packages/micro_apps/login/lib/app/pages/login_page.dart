@@ -1,5 +1,8 @@
+import 'package:event_bus/event_bus.dart';
 import 'package:flutter/material.dart';
 import 'package:micro_core/micro_core.dart';
+
+EventBus eventBus = EventBus();
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -21,6 +24,7 @@ class LoginPage extends StatelessWidget {
         child: ButtonDefaultWidget(
           title: 'Ir para Home',
           onPressed: () {
+            eventBus.fire('Anna');
             navigatorKey.currentState?.pushNamed('/home');
           },
         ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:micro_app_home/home.dart';
+import 'package:micro_app_login/app/pages/login_page.dart';
 import 'package:micro_app_login/login.dart';
 import 'package:micro_app_product/app/micro_app_product_resolver.dart';
 import 'package:micro_core/micro_core.dart';
@@ -14,6 +15,12 @@ class AppWidget extends StatelessWidget with BaseApp {
   @override
   Widget build(BuildContext context) {
     super.registerRoutes();
+    
+    eventBus.on().listen(
+      (event) {
+        print(event);
+      },
+    );
 
     return MaterialApp(
       title: 'Micro Frontends Simple Example',

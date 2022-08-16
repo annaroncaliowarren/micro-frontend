@@ -14,6 +14,8 @@ dependencies:
   
   micro_core:
     path: ../../../packages/micro_core
+  
+  event_bus: ^2.0.0
 
 dev_dependencies:
   flutter_test:
